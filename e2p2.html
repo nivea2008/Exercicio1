@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Utilizando a função de números aleatórios do JS crie um jogo de par ou impar,
+        //  onde o usuário escolha se quer par ou impar e digite um número entre 1 e 9,
+        //  em seguida o código deve gerar um número aleatório entre 1 e 9, se o a soma
+        //  dos números for igual ao escolhido pelo usuário ele vence, se não ele perde
+
+
+    let escolha = prompt("Escolha entre par ou impar: ")
+
+    let numero = Number(prompt("escolha um numero entre 1 e 9: "))
+
+    let numC = Math.random() * (9 - 1) + 1;
+
+    let somaN = numC + numero;
+
+    let sorteio;
+
+    if (isNaN(somaN)) {
+            } else if (somaN % 2 === 0) {
+                 sorteio = "par";
+            } else {
+                 sorteio ="impar";
+            }
+
+    if (escolha == sorteio){
+        alert ("voce venceu");
+    }else{
+        alert ("voce perdeu");
+    }
+            </script>
+</body>
+</html>

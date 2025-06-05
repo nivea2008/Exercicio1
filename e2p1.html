@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um código JS que verifique se o aluno foi aprovado, reprovado ou de recuperação.
+</title>
+</head>
+<body>
+    <script>
+        //Caso a nota seja maior ou igual a 7 está aprovado.
+        //Caso a nota esteja entre 4 e 6 está de recuperação
+       //Caso a nota seja menor que 4 está reprovado.
+       //Crie uma mensagem especial para quem tirar 10 
+
+       let notas = Number(prompt("Digite sua nota: "))
+
+       if (notas <= 4){
+        alert("Voce esta reprovado(a)");
+       }else if (notas <=6){
+        alert("Voce esta de recuperaçao");
+       }else if (notas <= 9){
+        alert("Voce esta aprovado(a)");
+       }else if(notas == 10){
+        alert("parabems voce tirou total e esta aprovado(a)");
+       }else{
+        alert("nota invalida")
+       }
+    </script>
+</body>
+</html>
